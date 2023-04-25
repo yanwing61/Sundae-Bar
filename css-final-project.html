@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sundae bar - HTML/CSS animation project</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script async defer src="js/script.js"></script>
+  </head>
+  <body>
+
+    <header>
+    <h1>Sundae bar</h1>
+
+    <button id="start" class="hintStart">Start</button>
+    <button id="reset">Reset</button>
+    </header>
+    
+    <main>
+      <section id="congrats">
+        <div id="congrat-cir"> 
+          <div id="cir3" class="cir"></div>
+          <div id="cir2" class="cir"></div>
+          <div id="cir1" class="cir"></div>
+        </div>
+        <h2 id="congrat-text">Congrats! You've created your own sundae!</h2>
+      </section>
+
+      <section id="instruction">
+        <div id="choose-flavour">
+          <h2>Click to choose one of the flavours</h2>
+          <h3>Hover to see the name of the flavour</h3>
+        </div>
+        <div id="choose-topping">
+          <h2>Click to choose one of the toppings</h2>
+        </div>
+      </section>
+
+      <div id="flavours">
+        <button id="orange" class="flavour"><span>orange</span></button>
+        <button id="mango" class="flavour"><span>mango</span></button>
+        <button id="strawberry" class="flavour"><span>strawberry</span></button>
+        <button id="blueberry" class="flavour"><span>blueberry</span></button>
+        <button id="cookies" class="flavour"><span>cookies</span></button>
+        <button id="mint" class="flavour"><span>mint</span></button>
+      </div>
+        
+      <div id="toppings">
+        <img id="chocolate" class="topping" src="image/chocolate.png" alt="chocolate">
+        <img id="cream" class="topping" src="image/cream.svg" alt="cream">
+        <img id="cherry" class="topping" src="image/cherry.png" alt="cherry">
+        
+
+        <!-- I found that if I use image for the toppings, they cannot be a button. Though I think button will benefit the accessibility of my code. -->
+        <!-- <button id="cherry" class="topping"><span>cherry</span></button>
+        <button id="chocolate" class="topping"><span>chocolate </span></button>
+        <button id="cream" class="topping"><span>cream</span></button> -->
+      </div>
+      
+      <div id="cone"></div>
+
+    </main>
+    <footer>
+      <div id="copyright">&copy; Copyright Yan Wing Pang, 2023.</div>
+    </footer>
+
+  </body>
+</html>
